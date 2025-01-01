@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inici de Sessió</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Benvingut!</h1>
+        <div id="loginArea">
+            <form id="loginForm">
+                <h2>Inicia sessió</h2>
+                <label for="loginUsername">Nom d'usuari:</label>
+                <input type="text" id="loginUsername" placeholder="Escriu el teu nom" required>
+                <label for="loginPassword">Contrasenya:</label>
+                <input type="password" id="loginPassword" placeholder="********" required>
+                <button type="submit">Inicia sessió</button>
+            </form>
+            <p id="loginMessage"></p>
+        </div>
+        <div id="registerArea">
+            <form id="registerForm">
+                <h2>Registra't</h2>
+                <label for="registerUsername">Nom d'usuari:</label>
+                <input type="text" id="registerUsername" placeholder="Escriu el teu nom" required>
+                <label for="registerPassword">Contrasenya:</label>
+                <input type="password" id="registerPassword" placeholder="********" required>
+                <label for="godDate">Quant vas conèixer a Déu? (any, mes, dia)</label>
+                <input type="date" id="godDate" required>
+                <label for="discipler">Qui et discipula? (poden ser diferents persones)</label>
+                <input type="text" id="discipler" placeholder="Escriu els noms" required>
+                <label for="finishedDiscipleship">Ja has acabat el discipulat? (Sí/No)</label>
+                <select id="finishedDiscipleship" required>
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                </select>
+                <label for="disciplesCount">Quantes deixebles tens?</label>
+                <input type="number" id="disciplesCount" placeholder="Número de deixebles" required>
+                <label for="disciplesNames">Quines deixebles tens? (poden ser una o més persones)</label>
+                <input type="text" id="disciplesNames" placeholder="Escriu els noms" required>
+                <button type="submit">Registra't</button>
+            </form>
+            <p id="registerMessage"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
