@@ -1,59 +1,66 @@
+/* Estils generals del cos */
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
     background-color: #f0f0f0;
+    color: #333;
 }
 
+/* Contenidor principal */
 .container {
-    background: white;
+    max-width: 600px;
+    margin: 50px auto;
     padding: 20px;
+    background: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 300px;
 }
 
-.hidden {
-    display: none;
+/* Estils dels títols */
+h1, h2 {
+    color: #4CAF50;
 }
 
-form label {
-    display: block;
-    margin: 10px 0 5px;
+/* Requadre d'informació de coneixement de Déu */
+.info-box {
+    width: 7cm;
+    height: 5cm;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Requadre d'informació sobre el discipulat */
+.discipulat-box {
+    width: 7cm;
+    height: 5cm;
+    border: 2px solid #2196F3;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #e3f2fd;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Botó de tancar sessió */
 button {
-    background-color: #007bff;
+    background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
+    font-size: 1em;
+    margin-top: 20px;
 }
 
 button:hover {
-    background-color: #0056b3;
-}
-
-#loginMessage {
-    color: red;
-    margin-top: 10px;
-}
-
-#registerMessage {
-    color: green;
-    margin-top: 10px;
+    background-color: #45a049;
 }

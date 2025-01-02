@@ -1,1 +1,31 @@
-<script src="inici.js"></script>
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pàgina Iniciada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hola, <span id="userDisplay"></span>!</h1>
+        <p>Aquesta és la teva pàgina d'inici.</p>
+
+        <!-- Requadre per al coneixement de Déu -->
+        <div id="timeWithGod" class="info-box">
+            <h2>Quant de temps coneixes Déu?</h2>
+            <p id="timeMessage"></p>
+        </div>
+
+        <!-- Requadre per al discipulat -->
+        <div id="discipulatInfo" class="discipulat-box">
+            <h2>Estat del discipulat</h2>
+            <p id="discipulatMessage"></p>
+            <p id="discipulatStatusMessage"></p> <!-- Nou missatge per a l'estat del discipulat -->
+        </div>
+
+        <button id="logoutButton">Tanca la sessió</button>
+    </div>
+    <script src="inici.js"></script>
+</body>
+</html>
